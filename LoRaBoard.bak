@@ -490,8 +490,6 @@ Wire Wire Line
 	8600 6100 8850 6100
 Text Label 9200 6100 0    60   ~ 0
 BOOT
-Wire Wire Line
-	10250 6100 10350 6100
 $Comp
 L +3.3V #PWR023
 U 1 1 58D26862
@@ -504,9 +502,7 @@ F 3 "" H 9750 6200 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	9750 6200 9750 6100
-Wire Wire Line
-	9750 6100 9850 6100
+	9750 6000 9750 6200
 Text Label 10350 6100 0    60   ~ 0
 RESET
 $Comp
@@ -625,7 +621,7 @@ Text Notes 5600 1500 0    60   ~ 0
 Wire Wire Line
 	1100 4750 1100 5050
 Text Label 1100 5050 0    60   ~ 0
-P14
+P17
 Wire Wire Line
 	1200 4750 1200 4950
 Text Label 1200 4950 0    60   ~ 0
@@ -711,7 +707,7 @@ F 3 "" H 1050 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Text Label 1300 4850 0    60   ~ 0
-P17
+P14
 Wire Wire Line
 	1300 4750 1300 4850
 Wire Wire Line
@@ -800,7 +796,7 @@ Wire Wire Line
 Text Label 800  2400 2    60   ~ 0
 GND
 Text Label 950  2500 2    60   ~ 0
-P11
+P6
 Text Label 4950 3050 2    60   ~ 0
 P5
 Text Label 4950 3200 2    60   ~ 0
@@ -820,29 +816,12 @@ RF
 Text Notes 1700 2250 0    60   ~ 0
 P5	-	DIO/UART1_CTS	-	PA_11\nP6	-	DIO/UART1_RTS	-	PA_12\nP11-	DIO													-	PA_8\n
 $Comp
-L SPST_TACT-EVQQ2 SW1
-U 1 1 58D8D8F1
-P 10050 6050
-F 0 "SW1" V 9765 5950 50  0000 L BNN
-F 1 "RESET" V 9865 6175 50  0000 L BNN
-F 2 "adafruit:EVQ-Q2" H 10080 6200 20  0001 C CNN
-F 3 "" H 10050 6050 60  0001 C CNN
-	1    10050 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9850 6050 9850 6150
-Connection ~ 9850 6100
-Wire Wire Line
-	10250 6050 10250 6150
-Connection ~ 10250 6100
-$Comp
 L SWITCH-SPDTPTH2 S1
 U 1 1 58D8E0A4
 P 9050 3500
 F 0 "S1" H 8975 3250 50  0000 L BNN
 F 1 "SWITCH-SPDTPTH2" H 8950 3650 50  0000 L BNN
-F 2 "SparkFun-Electromechanical:SWITCH-SPST-SMD-A" H 9080 3650 20  0001 C CNN
+F 2 "SparkFun-Electromechanical:SWITCH-SPDT-SMD" H 9080 3650 20  0001 C CNN
 F 3 "" H 9050 3500 60  0001 C CNN
 	1    9050 3500
 	1    0    0    -1  
@@ -910,7 +889,7 @@ Wire Wire Line
 Wire Wire Line
 	1150 2200 1150 2250
 Text Label 1100 2400 0    60   ~ 0
-P6
+P5
 Wire Wire Line
 	1050 2400 1100 2400
 Wire Wire Line
@@ -964,5 +943,22 @@ Wire Wire Line
 Text Notes 6850 950  0    60   ~ 0
 Indication\n
 Text Label 1150 2250 0    60   ~ 0
-P5
+P11
+$Comp
+L SWITCH_PUSHBUTTONC&K_KSS SW1
+U 1 1 58E21554
+P 10050 6000
+F 0 "SW1" H 9950 6140 50  0000 L BNN
+F 1 "SWITCH_PUSHBUTTONC&K_KSS" H 9950 5910 50  0001 L BNN
+F 2 "BTN_CK_KSS" H 10080 6150 20  0001 C CNN
+F 3 "" H 10050 6000 60  0001 C CNN
+	1    10050 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 6000 9850 6000
+Wire Wire Line
+	10250 6000 10350 6000
+Wire Wire Line
+	10350 6000 10350 6100
 $EndSCHEMATC
