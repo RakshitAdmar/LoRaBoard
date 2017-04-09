@@ -1,4 +1,4 @@
-update=Wed Mar 22 13:47:48 2017
+update=Fri 07 Apr 2017 06:35:28 PM IST
 version=1
 last_client=kicad
 [pcbnew]
@@ -81,3 +81,13 @@ LibName49=/home/rakshit/Documents/KiCad_Workspace/SparkFun-Kicad-Libraries-maste
 LibName50=/home/rakshit/Documents/KiCad_Workspace/SparkFun-Kicad-Libraries-master/Teensy_3_and_LC_Series_Boards_v1.1
 LibName51=/home/rakshit/Documents/KiCad_Workspace/SparkFun-Kicad-Libraries-master/User-Submitted
 LibName52=/home/rakshit/Documents/KiCad_Workspace/SparkFun-Kicad-Libraries-master/adafruit
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
