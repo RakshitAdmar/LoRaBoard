@@ -29,8 +29,30 @@ LIBS:atmel
 LIBS:contrib
 LIBS:valves
 LIBS:im880b
+LIBS:GeekAmmo
+LIBS:LilyPad-Wearables
+LIBS:SparkFun-Aesthetics
+LIBS:SparkFun-AnalogIC
+LIBS:SparkFun-Boards
+LIBS:SparkFun-Capacitors
+LIBS:SparkFun-Connectors
+LIBS:SparkFun-DigitalIC
+LIBS:SparkFun-DiscreteSemi
+LIBS:SparkFun-Displays
+LIBS:SparkFun-Electromechanical
+LIBS:SparkFun-FreqCtrl
+LIBS:SparkFun-LED
+LIBS:SparkFun-Passives
+LIBS:SparkFun-PowerIC
+LIBS:SparkFun-RF
+LIBS:SparkFun-Resistors
+LIBS:SparkFun-Retired
+LIBS:SparkFun-Sensors
+LIBS:Teensy_3_and_LC_Series_Boards_v1.1
+LIBS:User-Submitted
+LIBS:adafruit
 LIBS:LoRaBoard-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -196,17 +218,6 @@ F 1 "GND" H 9100 4250 50  0000 C CNN
 F 2 "" H 9100 4400 50  0001 C CNN
 F 3 "" H 9100 4400 50  0001 C CNN
 	1    9100 4400
-	-1   0    0    1   
-$EndComp
-$Comp
-L +3.3V #PWR011
-U 1 1 58D26862
-P 9750 6200
-F 0 "#PWR011" H 9750 6050 50  0001 C CNN
-F 1 "+3.3V" H 9750 6340 50  0000 C CNN
-F 2 "" H 9750 6200 50  0001 C CNN
-F 3 "" H 9750 6200 50  0001 C CNN
-	1    9750 6200
 	-1   0    0    1   
 $EndComp
 Text Label 10350 6100 0    60   ~ 0
@@ -853,5 +864,16 @@ F 2 "" H 9100 3350 50  0001 C CNN
 F 3 "" H 9100 3350 50  0001 C CNN
 	1    9100 3350
 	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58EB76AE
+P 9750 6200
+F 0 "#PWR?" H 9750 5950 50  0001 C CNN
+F 1 "GND" H 9750 6050 50  0000 C CNN
+F 2 "" H 9750 6200 50  0001 C CNN
+F 3 "" H 9750 6200 50  0001 C CNN
+	1    9750 6200
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
